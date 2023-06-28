@@ -1,20 +1,85 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Hello LexicalController!{% endblock %}
+{% extends 'base.html.twig' %} 
+{% block title %}Hello LexicalController!{% endblock %} 
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/dev/hackathon/hackathon2/Hackathon-2-ABLV/src/Controller/LexicalController.php'|file_link(0) }}">src/Controller/LexicalController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/dev/hackathon/hackathon2/Hackathon-2-ABLV/templates/lexical/index.html.twig'|file_link(0) }}">templates/lexical/index.html.twig</a></code></li>
-    </ul>
+    <h1>Lexique ✅</h1>
 </div>
+
+<div class="row">
+    <div class="col-4">
+        <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end"
+        >
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Item 1</a>
+                <a class="nav-link" href="#item-2">Item 2</a>
+                <a class="nav-link" href="#item-3">Item 3</a>
+                <a class="nav-link" href="#item-4">Item 4</a>
+                <a class="nav-link" href="#item-4">Item 4</a>
+            </nav>
+        </nav>
+    </div>
+
+    <div class="col-8">
+        <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2"
+            tabindex="0"
+        >
+            <div id="item-1">
+                <h4>Item 1</h4>
+                <p>...</p>
+            </div>
+            <div id="item-1-1">
+                <h5>Item 1-1</h5>
+                <p>...</p>
+            </div>
+            <div id="item-1-2">
+                <h5>Item 1-2</h5>
+                <p>...</p>
+            </div>
+            <div id="item-2">
+                <h4>Item 2</h4>
+                <p>...</p>
+            </div>
+            <div id="item-2-1">
+                <h5>Item 2-1</h5>
+                <p>...</p>
+            </div>
+            <div id="item-2-2">
+                <h5>Item 2-2</h5>
+                <p>...</p>
+            </div>
+            <div id="item-3">
+                <h4>Item 3</h4>
+                <p>...</p>
+            </div>
+            <div id="item-3-1">
+                <h5>Item 3-1</h5>
+                <p>...</p>
+            </div>
+            <div id="item-3-2">
+                <h5>Item 3-2</h5>
+                <p>...</p>
+            </div>
+            <div id="item-4">
+                <h4>Item 4</h4>
+                <p>...</p>
+            </div>
+            <div id="item-4-1">
+                <h5>Item 4-1</h5>
+                <p>...</p>
+            </div>
+            <div id="item-4-2">
+                <h5>Item 4-2</h5>
+                <p>...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
