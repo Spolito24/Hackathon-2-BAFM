@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Category{% endblock %}
+
+{% block body %}
+    <h1>Ajouter une nouvelle catégorie</h1>
+    <div class="d-flex justify-content-center">
+        <div class="col-9 col-md-6">
+            <div class="p-2 my-5 shadow-lg rounded-2">
+
+            {{ include('category/_form.html.twig') }}
+            </div>
+            <a class="btn btn-danger" href="{{ path('home') }}">Annuler</a>
+        </div>
+        
+    </div>
+
+{% endblock %}
