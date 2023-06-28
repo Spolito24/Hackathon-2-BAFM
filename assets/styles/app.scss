@@ -1,4 +1,14 @@
-//start coding by removing this file and adding yours ;)
+$primary: #00ACB0;
+$light: #ffffff;
+
 @import "wcs";
 
 @import "~bootstrap/scss/bootstrap";
+
+.nav-link {
+    font-weight: bold;
+}
+
+.navbar-logo {
+    height: 45px;
+}
