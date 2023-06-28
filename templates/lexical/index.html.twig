@@ -1,20 +1,165 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Hello LexicalController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
+{% extends 'base.html.twig' %} {% block title %}Hello LexicalController!{%
+endblock %} {% block body %}
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/dev/hackathon/hackathon2/Hackathon-2-ABLV/src/Controller/LexicalController.php'|file_link(0) }}">src/Controller/LexicalController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/dev/hackathon/hackathon2/Hackathon-2-ABLV/templates/lexical/index.html.twig'|file_link(0) }}">templates/lexical/index.html.twig</a></code></li>
-    </ul>
+    <h1>Lexique ✅</h1>
 </div>
+
+<div class="row">
+    <div class="col-4">
+        <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end"
+        >
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#OS">Le système d'exploitation</a>
+                <a class="nav-link" href="#RAM">La RAM (mémoire vive)</a>
+                <a class="nav-link" href="#CPU">Le processeur</a>
+                <a class="nav-link" href="#MP">Les mégapixels (pour l'appareil photo)</a>
+                <a class="nav-link" href="#Go">La mémoire ROM (Go)</a>
+                <a class="nav-link" href="#Pixel">La résolution écran (Pixels)</a>
+                <a class="nav-link" href="#Battery">L'autonomie (batterie)</a>
+            </nav>
+        </nav>
+    </div>
+
+    <div class="col-8">
+        <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2"
+            tabindex="0"
+        >
+            <div id="OS">
+                <h4>Le système d'exploitation</h4>
+                <p>
+                    C'est l'un des éléments clefs d'un smartphone qui permet de
+                    l'utiliser. <br />
+                    C'est un ensemble de logiciels qui permet à votre téléphone
+                    de fonctionner dans son ensemble : appels, téléchargement
+                    d'applications, personnalisation… Android, de Google, domine
+                    le marché, en dehors du système d'exploitation iOS utilisé
+                    par Apple. <br />
+                    Certains systèmes d'exploitation peuvent être plus intuitifs
+                    que d'autres et vous devriez tester le fonctionnement
+                    basique d'un téléphone avant de l'acheter pour être sûr que
+                    cela vous convient. Basculer d'un système d'exploitation à
+                    un autre peut être très perturbant.
+                </p>
+            </div>
+            <div id="RAM">
+                <h4>La RAM (mémoire vive)</h4>
+                <p>
+                    Chaque téléphone possède une certaine RAM, abréviation de «
+                    Random Access Memory ». <br />
+                    Exprimée en gigaoctet (Go), elle influence directement la
+                    rapidité de réponse du smartphone. Ou, si vous préférez,
+                    c'est elle qui permet à votre téléphone de cumuler un grand
+                    nombre d'applications pouvant fonctionner simultanément.
+                    <br />
+                    Alors qu'il y a quelques années un smartphone équipé d'une
+                    mémoire vive de 2 ou 3 Go de RAM était largement suffisant,
+                    aujourd'hui, la capacité minimale de RAM que votre téléphone
+                    portable doit embarquer est d'au moins 4 ou 6 Go pour
+                    fonctionner correctement. <br />
+                    Et ce particulièrement si vous utilisez beaucoup d'applis.
+                    Si votre RAM est insuffisante, votre téléphone peut devenir
+                    lent et répondre moins vite à vos actions. <br />
+                    Il faut donc penser à fermer régulièrement vos applications
+                    lorsque vous avez fini de les utiliser, plutôt que de les
+                    laisser fonctionner en arrière-plan.
+                </p>
+            </div>
+            <div id="CPU">
+                <h4>Le processeur</h4>
+                <p>
+                    C'est un des éléments phares de la technologie et surtout de
+                    l'informatique. Il s'agit en quelque sorte du cerveau de
+                    votre téléphone portable. C'est ce qui permet à votre
+                    smartphone de réaliser un grand nombre de calculs, afin de
+                    faire tourner le système d'exploitation de votre téléphone,
+                    votre navigateur, et tant d'autres choses. Un processeur de
+                    mauvaise qualité fait que votre téléphone peut être très
+                    lent. On estime sa puissance à partir de sa fréquence, mais
+                    le nombre de “coeurs” compte tout autant : plus un
+                    processeur compte de coeurs, plus votre smartphone traitera
+                    rapidement les données, mais il ne suffit pas. C'est
+                    lorsqu'un bon processeur est combiné à une bonne mémoire RAM
+                    que votre téléphone pourra être très vif.
+                </p>
+            </div>
+            <div id="MP">
+                <h4>Les mégapixels (pour l'appareil photo)</h4>
+                <p>
+                    Il faut dire que pour la plupart d'entre nous, le smartphone
+                    fait désormais office d'appareil photo principal. Les
+                    mégapixels sont justement une unité de mesure pour l'image
+                    d'un téléphone. Un pixel est composé des trois couleurs
+                    primaires (rouge, vert et bleu) qui, une fois mélangées,
+                    permettent d'obtenir toutes les couleurs visibles. Un
+                    mégapixel correspond à un million de pixels. Ainsi, si
+                    l'appareil d'un téléphone dispose de 10 mégapixels, cela
+                    signifie qu'il contient 10 millions de petites cellules
+                    sensibles à la lumière. Si la qualité du pixel est au
+                    rendez-vous, cela signifie que votre appareil photo vous
+                    permettra de capturer de belles images.
+                </p>
+            </div>
+            <div id="Go">
+                <h4>La mémoire ROM (Go)</h4>
+                <p>
+                    Il faut dire que pour la plupart d'entre nous, le smartphone
+                    fait désormais office d'appareil photo principal. Les
+                    mégapixels sont justement une unité de mesure pour l'image
+                    d'un téléphone. Un pixel est composé des trois couleurs
+                    primaires (rouge, vert et bleu) qui, une fois mélangées,
+                    permettent d'obtenir toutes les couleurs visibles. Un
+                    mégapixel correspond à un million de pixels. Ainsi, si
+                    l'appareil d'un téléphone dispose de 10 mégapixels, cela
+                    signifie qu'il contient 10 millions de petites cellules
+                    sensibles à la lumière. Si la qualité du pixel est au
+                    rendez-vous, cela signifie que votre appareil photo vous
+                    permettra de capturer de belles images.
+                </p>
+            </div>
+            <div id="Pixel">
+                <h4>La résolution écran (Pixels)</h4>
+                <p>
+                    Nous vous avons expliqué plus haut ce qu'était un pixel. Il
+                    faut savoir que cette combinaison de couleurs est aussi
+                    décisive dans la résolution de votre écran. Plus la
+                    définition de l'écran est élevée, plus il y a de pixels et
+                    plus l'image sera précise. C'est souvent en utilisant la
+                    ligne horizontale de pixels que l'on obtient la résolution
+                    de l'écran d'un téléphone. Il existe différentes
+                    appellations qui correspondent au standard de résolution :
+                    une qualité HD signifie qu'il y a 720 pixels de largeur sur
+                    votre écran, QHD renvoie à 1440 pixels de largeur, UHD à
+                    2160 pixels de largeur et la 4K est à 4096 pixels de
+                    largeur. Plus cette qualité augmente, plus vous disposerez
+                    d'un confort visuel certain. Tout dépend donc de vos
+                    attentes en matière de qualité.
+                </p>
+            </div>
+            <div id="Battery">
+                <h4>L'autonomie (batterie)</h4>
+                <p>
+                    C'est souvent le point sur lequel les smartphones sont très
+                    souvent critiqués : leur batterie se vide plutôt rapidement.
+                    Bien sûr, cela dépend du temps que vous passez sur votre
+                    smartphone, mais il est très probable que vous devez le
+                    recharger au moins une fois durant la journée. Certains
+                    constructeurs diminuent volontairement la taille de leur
+                    batterie pour obtenir des smartphones toujours plus fins et
+                    se concentrent sur le développement d'autres composants du
+                    téléphone. A l'inverse, d'autres marquent proposent des
+                    smartphones dont l'atout principal est la batterie longue
+                    durée. Une capacité d'au moins 3 500 mAh devrait vous
+                    permettre d'utiliser votre téléphone une journée entière.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
