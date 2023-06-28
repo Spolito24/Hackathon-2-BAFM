@@ -1,5 +1,7 @@
 $primary: #00ACB0;
 $light: #ffffff;
+$secondary: #F8F4F4;
+$dark: #5964A1;
 
 @import "wcs";
 
@@ -11,4 +13,18 @@ $light: #ffffff;
 
 .navbar-logo {
     height: 45px;
+}
+
+.header-title-desktop {
+    width: 65vw;
+    font-size: 20px;
+}
+
+.header-title-mobile {
+    width: 75vw;
+}
+
+.card-body {
+    border: 2px solid $primary;
+    height: 15rem;
 }
