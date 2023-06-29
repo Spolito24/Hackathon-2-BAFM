@@ -3,6 +3,7 @@
 {% block title %}Article{% endblock %}
 
 {% block body %}
+<a class="btn btn-success m-0 shadow-lg text-white rounded-pill me-2" style="background-color: #5964A1;" href="{{ path('app_category_show', {'id': article.category.id}) }}">Retour</a>
 
 <div class="container d-flex mx-auto justify-content-center my-5 ">
     <div class="row d-flex mx-auto flex-wrap-reverse flex-md">
@@ -11,14 +12,17 @@
                 <h1 class="text-center">{{article.title}}</h1>
                 <hr class="m-1">
                 <p>{{article.content|raw}}</p>
+                
+                {% if is_granted('ROLE_ADMIN') %}
+                <hr class="m-1">
+                <div class="d-flex justify-content-between mt-auto p-2">
+                    <a class="btn btn-success m-0 shadow-lg text-white" href="{{ path('admin_edit_article', {'id': article.id}) }}">Modifier</a>
+                    {{ include('article/_delete_form.html.twig') }}
+                </div>
+            {% endif %}
+
             </div>
         </div>
     </div>
 </div>
-
-    <a href="{{ path('admin_delete_article', {'id': article.category.id}) }}">Retour</a>
-
-    <a href="{{ path('admin_edit_article', {'id': article.id}) }}">Modifier</a>
-
-{{ include('article/_delete_form.html.twig') }}
 {% endblock %}

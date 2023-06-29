@@ -1,6 +1,8 @@
 $primary: #00ACB0;
 $light: #ffffff;
-
+$secondary: #F8F4F4;
+$dark: #5964A1;
+$info: #D9D9D9;
 @import "wcs";
 
 @import "~bootstrap/scss/bootstrap";
@@ -11,4 +13,53 @@ $light: #ffffff;
 
 .navbar-logo {
     height: 45px;
+}
+
+.header-title-desktop {
+    width: 65vw;
+    font-size: 20px;
+}
+
+.header-title-mobile {
+    width: 75vw;
+}
+
+.cardhome {
+    height: 15rem;
+}
+
+.cardBody {
+    width: 240px;
+}
+
+.icon svg {
+    color: #5964A1;
+    margin-top: 5px;
+}
+
+.card-bdy-mobile {
+    height: 10rem;
+
+}
+
+.card-text+.btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-pic {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.img-bloc img {
+    width: 48.7vw;
+    height: 400px;
+
+}
+
+.frame {
+    border: 5px solid #00ACB0;
+    padding: 10px;
+    border-radius: 5px;
 }
