@@ -14,11 +14,11 @@ class CategoryType extends AbstractType
     {
         $builder
         ->add('title', TextType::class, [
-            'label' => 'Nouvelle catégorie'
+            'label' => 'Titre'
         ])
 
         ->add('image', TextType::class, [
-            'label' => 'Lien image : '
+            'label' => 'Lien image'
         ]);
     }
 
