@@ -12,6 +12,7 @@
           {% if is_granted('ROLE_ADMIN') %}
           <a class="btn btn-success m-0 shadow-lg text-white rounded-pill me-2" href="{{ path('admin_content')}}" style="background-color: #5964A1;">ADMIN</a>
           {% endif %}
+          <a class="btn btn-success m-0 shadow-lg text-white rounded-pill me-2" href="{{ path('app_logout')}}" style="background-color: #5964A1;">Déconnection</a>
         </div>
       </div>
     </div>
