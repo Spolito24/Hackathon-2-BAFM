@@ -20,8 +20,7 @@ class ArticleType extends AbstractType
             ->add('content', CKEditorType::class, [
                 'label' => 'Contenu'
             ])
-            ->add('category', null, ['choice_label' => 'title'])
-        ;
+            ->add('category', null, ['choice_label' => 'title']);
     }
 
     public function configureOptions(OptionsResolver $resolver): void
