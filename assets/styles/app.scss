@@ -38,7 +38,8 @@ $info: #D9D9D9;
 }
 
 .card-bdy-mobile {
-    height: 10rem;
+    height: 11rem;
+    width: 250px;
 
 }
 
@@ -62,4 +63,8 @@ $info: #D9D9D9;
     border: 5px solid #00ACB0;
     padding: 10px;
     border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #6470B5 !important;
 }
