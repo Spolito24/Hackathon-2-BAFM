@@ -4,16 +4,16 @@
 
 {% block body %}
 <div class="container">
-    <div>
-    <a class="btn btn-success m-0 shadow-lg text-white rounded-pill mt-3 mb-4" href="{{ path('admin_new_category')}}" style="background-color: #5964A1;">Ajouter une catégorie</a>
+    <div class="d-flex justify-content-center">
+    <a class="btn btn-success m-0 shadow-lg text-white rounded-pill mt-3 mb-4 me-2" href="{{ path('admin_new_category')}}" style="background-color: #5964A1;">Ajouter une catégorie</a>
     <a class="btn btn-success m-0 shadow-lg text-white rounded-pill mt-3 mb-4" href="{{ path('admin_new_article')}}" style="background-color: #5964A1;">Ajouter un article</a>
 </div>
-    <h1>Sections en ligne</h1>
+    <h1 class="display-4 text-center">Sections en ligne</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Réf</th>
                 <th>Titre</th>
                 <th>Consulter</th>
                 <th>Modifier</th>
@@ -37,12 +37,12 @@
         </tbody>
     </table>
 
-    <h1>Articles en ligne</h1>
+    <h1 class="display-4 text-center">Articles en ligne</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Réf</th>
                 <th>Titre</th>
                 <th>Section</th>
                 <th>Consulter</th>
