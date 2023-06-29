@@ -1,15 +1,11 @@
-{% extends 'base.html.twig' %} 
-
-{% block title %}Hello LexicalController!{% endblock %} 
+{% extends 'base.html.twig' %}
+{% block title %} Hello LexicalController! {% endblock %} 
 
 {% block body %}
     
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="example-wrapper">
-                    <h1>Lexique ✅</h1>
-                </div>
                 <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end position-fixed">
                     <nav class="nav flex-column">
                         <a class="nav-link" href="#OS">Le système d'exploitation</a>
@@ -29,8 +25,8 @@
                     data-bs-smooth-scroll="true"
                     class="scrollspy-example-2"
                     tabindex="0">
-                    <div id="OS" class="mt-5">
-                        <h1 class="mb-5">Lexique :</h1>
+                    <div id="OS">
+                        <h1 class="mb-2">Lexique :</h1>
                         <h4>Le système d'exploitation</h4>
                         <p>
                             C'est l'un des éléments clefs d'un smartphone qui permet de
@@ -162,7 +158,7 @@
         </div>
     </div>
     
-    {% endblock %}
+{% endblock %}
     
     
     
