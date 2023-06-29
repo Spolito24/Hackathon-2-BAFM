@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="{{ asset('build/images/favicon.png') }}"/>
+        <title>
+            {% block title %}Projet 3 Name{% endblock %}
+        </title>
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+
+<body>
+
+    <div class="text-center">
+        <h1>Bienvenue</h1>
+        <h2>Veuillez vous connecter pour accéder à la plateforme</h2>
+        <img  src="{{ asset('build/images/logoEC.png') }}" alt="logo" class="my-3 img-fluid" id="login-logo">
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="col-9 col-md-6">
+            <form class="p-2 shadow-lg rounded-2" action="{{ path('app_login') }}" method="post">
+                <p>
+                    <label class="form-label" for="username">Email</label>
+                    <input class="form-control" type="text" id="username" name="_username" placeholder="Identifiant"
+                        value="{{ last_username }}">
+                </p>
+                <p>
+                    <label class="form-label" for="password">Mot de passe</label>
+                    <input class="form-control" type="password" id="password" placeholder="Mot de passe"
+                        name="_password">
+                </p>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                <button type="submit" class="btn btn-primary mb-3 text-white">Connection</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
