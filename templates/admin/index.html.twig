@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Category index{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div>
+    <a class="btn btn-success m-0 shadow-lg text-white rounded-pill me-2" href="{{ path('admin_new_category')}}" style="background-color: #5964A1;">Ajouter une catégorie</a>
+    <a class="btn btn-success m-0 shadow-lg text-white rounded-pill" href="{{ path('admin_new_article')}}" style="background-color: #5964A1;">Ajouter un article</a>
+</div>
+    <h1>Sections en ligne</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Consulter</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for category in categories %}
+            <tr>
+                <td>{{ category.id }}</td>
+                <td>{{ category.title }}</td>
+                <td><a class="btn btn-success m-0 shadow-lg text-white" href="{{ path('app_category_show', {'id': category.id}) }}">Consulter</a></td>
+                <td><a class="btn btn-success m-0 shadow-lg text-white" href="{{ path('admin_edit_category', {'id': category.id}) }}">Modifier</a></td>
+                <td>{{ include('category/_delete_form.html.twig') }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">Aucune section en ligne</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Articles en ligne</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Section</th>
+                <th>Consulter</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for article in articles %}
+            <tr>
+                <td>{{ article.id }}</td>
+                <td>{{ article.title }}</td>
+                <td>{{ article.category.title }}</td>
+                <td><a class="btn btn-success m-0 shadow-lg text-white" href="{{ path('app_article_show', {'id': article.id}) }}">Consulter</a></td>
+                <td><a class="btn btn-success m-0 shadow-lg text-white" href="{{ path('admin_edit_article', {'id': article.id}) }}">Modifier</a></td>
+                <td>{{ include('article/_delete_form.html.twig') }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Aucun article en ligne</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
