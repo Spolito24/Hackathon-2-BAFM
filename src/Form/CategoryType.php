@@ -15,6 +15,10 @@ class CategoryType extends AbstractType
         $builder
         ->add('title', TextType::class, [
             'label' => 'Nouvelle catégorie'
+        ])
+
+        ->add('image', TextType::class, [
+            'label' => 'Lien image : '
         ]);
     }
 
