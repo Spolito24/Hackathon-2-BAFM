@@ -2,16 +2,18 @@
 {% block title %} Hello LexicalController! {% endblock %} 
 
 {% block body %}
-    
+
+<img src="{{ asset('build/images/lexical1.jpg') }}" alt="logo" class="img-fluid mx-auto d-block">
+
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end position-fixed">
+            <div class="col-12 col-md-4">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 d-none d-md-block position-fixed">
                     <nav class="nav flex-column">
                         <a class="nav-link" href="#OS">Le système d'exploitation</a>
                         <a class="nav-link" href="#RAM">La RAM (mémoire vive)</a>
                         <a class="nav-link" href="#CPU">Le processeur</a>
-                        <a class="nav-link" href="#MP">Les mégapixels (pour l'appareil photo)</a>
+                        <a class="nav-link" href="#MP">L'appareil photo</a>
                         <a class="nav-link" href="#Go">La mémoire ROM (Go)</a>
                         <a class="nav-link" href="#Pixel">La résolution écran (Pixels)</a>
                         <a class="nav-link" href="#Battery">L'autonomie (batterie)</a>
@@ -26,7 +28,6 @@
                     class="scrollspy-example-2"
                     tabindex="0">
                     <div id="OS">
-                        <h1 class="mb-2">Lexique :</h1>
                         <h4>Le système d'exploitation</h4>
                         <p>
                             C'est l'un des éléments clefs d'un smartphone qui permet de
