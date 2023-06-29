@@ -12,3 +12,10 @@ import './styles/app.scss';
 import './bootstrap';
 
 require('bootstrap');
+
+setTimeout(function() {
+    var flashMessage = document.querySelector('div.alert');
+    if (flashMessage) {
+        flashMessage.remove();
+    }
+}, 5000);
